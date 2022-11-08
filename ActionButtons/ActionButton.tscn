@@ -1,6 +1,11 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ActionButtons/ActionButton.gd" type="Script" id=1]
 
 [node name="ActionButton" type="Button"]
 margin_right = 128.0
 margin_bottom = 32.0
 text = "Action Button"
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="." to="." method="_on_ActionButton_pressed"]

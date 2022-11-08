@@ -10,6 +10,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _on_battle_started():
 	$BattleUI.show()
+	
 
 func _on_battle_ended():
 	$BattleUI.hide()

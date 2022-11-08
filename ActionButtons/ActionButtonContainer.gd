@@ -22,3 +22,6 @@ func _on_Attack_pressed() -> void:
 func _on_Items_pressed() -> void:
 	items.show()
 	starting_actions_menu.hide()
+
+func _on_battle_started():
+	starting_actions_menu.show()
