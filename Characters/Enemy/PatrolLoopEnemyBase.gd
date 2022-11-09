@@ -20,3 +20,8 @@ func set_speed(value):
 	speed = value
 	var ap = find_node("AnimationPlayer")
 	if ap: ap.playback_speed = speed
+
+
+func _on_Area2D_body_entered(body: Node) -> void:
+	if "Player" in body.name:
+		get_tree().reload_current_scene()

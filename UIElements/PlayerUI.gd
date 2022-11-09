@@ -18,7 +18,7 @@ func _on_player_dead():
 func _on_PlayerStats_hp_changed(value) -> void:
 	var stats = BU.player
 	health_bar.value = value
-	if stats.health <= 0:
+	if stats.hp <= 0:
 		_on_player_dead()
 		queue_free()
 

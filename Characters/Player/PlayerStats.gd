@@ -17,7 +17,6 @@ signal mp_changed(value)
 signal stress_changed(value)
 
 func _ready():
-	EventBus.connect("turn_ended", self, "_on_turn_ended")
 	BU.player = self
 
 func _exit_tree():
@@ -42,5 +41,4 @@ func set_mp(value):
 #	stress = clamp(value, 0, max_stress)
 #	emit_signal("stress_changed", stress)
 
-func _on_turn_ended():
-	EventBus.emit_signal("enemy_turn_started")
+

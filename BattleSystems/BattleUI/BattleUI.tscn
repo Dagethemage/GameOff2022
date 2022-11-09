@@ -7,6 +7,7 @@
 [ext_resource path="res://OverlapandSystems/OverlapObjects/BattleSpawner.tscn" type="PackedScene" id=5]
 
 [node name="BattleUI" type="CanvasLayer"]
+pause_mode = 2
 
 [node name="Control" type="Control" parent="."]
 anchor_left = 0.5
@@ -19,7 +20,7 @@ margin_right = 288.0
 margin_bottom = 212.0
 
 [node name="TextureRect" type="TextureRect" parent="Control"]
-modulate = Color( 0.0470588, 0.0470588, 0.0470588, 0.486275 )
+modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
